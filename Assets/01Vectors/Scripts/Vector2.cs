@@ -55,16 +55,16 @@ public struct MyVector2D
     public static MyVector2D operator *(MyVector2D a, float b)
     {
         return new MyVector2D(
-            a.x + b,
-            a.y + b
+            a.x * b,
+            a.y * b
         );
     }
     
     public static MyVector2D operator *( float b,MyVector2D a)
     {
         return new MyVector2D(
-            a.x + b,
-            a.y + b
+            a.x * b,
+            a.y * b
         );
     }
     

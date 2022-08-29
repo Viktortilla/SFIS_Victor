@@ -456,6 +456,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displacement:
+    x: 0
+    y: 0
+  velocity:
     x: 1
     y: 0
   camera: {fileID: 2133977949}
