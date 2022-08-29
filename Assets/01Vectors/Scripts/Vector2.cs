@@ -85,6 +85,15 @@ public struct MyVector2D
             color
         );
     }
+    public void Draw(MyVector2D origen, Color color)
+    {
+        Vector3 origen3d = new Vector3(origen.x, origen.y, 0);
+        Debug.DrawLine(
+            origen3d,
+            new Vector3(x + origen.x, y + origen.y, 0),
+            color
+        );
+    }
 
     public override string ToString()
     {

@@ -247,8 +247,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   v1:
-    x: 0
-    y: 0
+    x: 5
+    y: 5
+  v2:
+    x: 5
+    y: -5
+  scalar: 0
 --- !u!4 &936754556
 Transform:
   m_ObjectHideFlags: 0
