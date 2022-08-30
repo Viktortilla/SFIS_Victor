@@ -9,7 +9,7 @@ public class MyBolita : MonoBehaviour
     [SerializeField] private MyVector2D velocity;
     [Range(0f,1f)][SerializeField] private float dampingFactor=0.9f;
     [Header("World")]
-    [SerializeField] Camera camera;
+    [SerializeField]new Camera camera;
     private byte cont = 0;
     private float x;
     private float y;
@@ -20,15 +20,18 @@ public class MyBolita : MonoBehaviour
         position = new MyVector2D(transform.position.x, transform.position.y);
         
     }
-
+    void FixedUpdate()
+    {
+        Move();
+    }
     void Update()
     {
-        velocity = velocity + acceleration * Time.deltaTime;
+        velocity = velocity + acceleration * Time.fixedDeltaTime;
         position = new MyVector2D(transform.position.x, transform.position.y);
         velocity.Draw(position,Color.red);
         position.Draw(Color.blue);
         acceleration.Draw(Color.green);
-        Move();
+        
 
         if (Input.GetKeyDown(KeyCode.Space))//si se presiona espacio
         {
@@ -56,7 +59,7 @@ public class MyBolita : MonoBehaviour
     public void Move()
     {
         
-        position = position + velocity * Time.deltaTime;
+        position = position + velocity * Time.fixedDeltaTime;
 
         if(Mathf.Abs(position.x)> camera.orthographicSize)
         {
