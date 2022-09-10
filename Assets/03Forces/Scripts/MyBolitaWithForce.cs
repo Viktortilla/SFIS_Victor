@@ -13,7 +13,10 @@ public class MyBolitaWithForce : MonoBehaviour
     [Header("Forces")]
     [SerializeField] private MyVector2D gravedad;
     [SerializeField] private MyVector2D viento;
-    [SerializeField] private MyVector2D peso;
+    [SerializeField] private MyVector2D normal;
+    [Range(0f,1f)][SerializeField] private float coeficienteDeF;
+    private MyVector2D peso;
+    private MyVector2D friccion;
     
     [Range(0f,1f)][SerializeField] private float dampingFactor=0.9f;
     [Header("World")]
@@ -31,8 +34,9 @@ public class MyBolitaWithForce : MonoBehaviour
     void FixedUpdate()
     {
         peso = masa * gravedad;
-        ApplyForce(peso+viento);
-        
+        //ApplyForce(peso+viento);
+        friccion=-coeficienteDeF*peso.magnitude*(velocity.normalized);
+        ApplyForce(friccion+viento+peso);
         Move();
     }
     void Update()
@@ -43,6 +47,7 @@ public class MyBolitaWithForce : MonoBehaviour
         position.Draw(Color.blue);
         acceleration.Draw(Color.green);
         
+
     }
     public void Move()
     {

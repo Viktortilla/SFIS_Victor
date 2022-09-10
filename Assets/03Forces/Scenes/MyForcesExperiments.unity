@@ -468,9 +468,10 @@ MonoBehaviour:
   viento:
     x: 0
     y: 0
-  peso:
+  normal:
     x: 0
     y: 0
+  coeficienteDeF: 0.373
   dampingFactor: 0.9
   camera: {fileID: 2133977949}
 --- !u!1 &1099091072
@@ -758,9 +759,10 @@ MonoBehaviour:
   viento:
     x: 0
     y: 0
-  peso:
+  normal:
     x: 0
     y: 0
+  coeficienteDeF: 0
   dampingFactor: 0.9
   camera: {fileID: 2133977949}
 --- !u!212 &1512842784

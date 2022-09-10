@@ -8,6 +8,24 @@ public struct MyVector2D
     public float x;
     public float y;
 
+    public float magnitude
+    {
+        get { return Mathf.Sqrt(x * x + y * y); }
+    }
+    //es lo mismo que escrivir float magnitude => Mathf.S...
+    public MyVector2D normalized
+    {
+        get
+        {
+            if (magnitude <= 0.0001f)
+            {
+                return new MyVector2D(0, 0);
+            }
+            return new MyVector2D(x/magnitude,y/magnitude);
+        }
+    }
+    
+
     public MyVector2D(float x, float y)//constructor= estado inicial del objeto al inicializarlo 
     {
         this.x = x;
@@ -112,5 +130,19 @@ public struct MyVector2D
     public override string ToString()
     {
         return $"[{x}, {y}]";
+    }
+
+    public void Normalize()
+    {
+        float tolerance = 0.0001f;//para evitar diviciones de numeros muy pequenos
+        if (magnitude <= tolerance)
+        {
+            x = 0;
+            y = 0;
+           return; 
+        }
+        
+        x /= magnitude;
+        y /= magnitude;
     }
 }
