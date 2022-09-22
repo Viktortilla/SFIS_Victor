@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="745d5cbd-3549-465f-a1d6-376581769f1f" name="Changes" comment="" />
+    <list default="true" id="745d5cbd-3549-465f-a1d6-376581769f1f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.SFIS_Victor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SFIS_Victor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03Forces/Scenes/MyForcesExperiments.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03Forces/Scenes/MyForcesExperiments.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03Forces/Scripts/MyBolitaWithForce.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03Forces/Scripts/MyBolitaWithForce.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +71,9 @@
       <option name="presentableId" value="Default" />
       <updated>1662750589054</updated>
       <workItem from="1662750620323" duration="5840000" />
-      <workItem from="1662772000840" duration="3455000" />
+      <workItem from="1662772000840" duration="3781000" />
+      <workItem from="1663704996153" duration="7042000" />
+      <workItem from="1663852976705" duration="4316000" />
     </task>
     <servers />
   </component>
