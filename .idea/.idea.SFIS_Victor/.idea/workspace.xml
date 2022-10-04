@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="745d5cbd-3549-465f-a1d6-376581769f1f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SFIS_Victor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SFIS_Victor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03Forces/Scenes/MyForcesExperiments.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03Forces/Scenes/MyForcesExperiments.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01Vectors/Scripts/Vector2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01Vectors/Scripts/Vector2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03Forces/Scenes/GravityAttraction.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03Forces/Scenes/GravityAttraction.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/03Forces/Scripts/MyBolitaWithForce.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03Forces/Scripts/MyBolitaWithForce.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +74,8 @@
       <workItem from="1662750620323" duration="5840000" />
       <workItem from="1662772000840" duration="3781000" />
       <workItem from="1663704996153" duration="7042000" />
-      <workItem from="1663852976705" duration="4316000" />
+      <workItem from="1663852976705" duration="5112000" />
+      <workItem from="1664916295312" duration="5524000" />
     </task>
     <servers />
   </component>

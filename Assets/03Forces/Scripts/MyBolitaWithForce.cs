@@ -66,6 +66,10 @@ public class MyBolitaWithForce : MonoBehaviour
         }
         else if(runMode==BolitaRunMode.Gravity)
         {
+            if (velocity.magnitude > 10)
+            {
+                velocity = 10 * velocity.normalized;
+            }
             MyVector2D diferencia = otherBolita.position - position;
             float r = diferencia.magnitude;
             gravityAttraction = ((masa * otherBolita.masa) / (r * r))*diferencia.normalized;

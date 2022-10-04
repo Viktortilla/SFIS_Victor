@@ -99,6 +99,13 @@ public struct MyVector2D
             a.y / b
         );
     }
+    private Vector3 PolarToCartesian(float radius,float angle)
+    {
+        
+        float x = radius*Mathf.Cos(angle * Mathf.Deg2Rad);
+        float y = radius*Mathf.Sin(angle * Mathf.Deg2Rad);
+        return new Vector3(x, y, 0);
+    }
     
     public void Draw(Color color)
     {
