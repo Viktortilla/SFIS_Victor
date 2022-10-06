@@ -5,11 +5,20 @@ using UnityEngine;
 public class LookAt : MonoBehaviour 
 {
     // Update is called once per frame
+    private float speed;
     void Update()
     {
         Vector3 mousePosition = GetWorldMousePosition();
-        float radians = Mathf.Atan2(mousePosition.y , mousePosition.x) - Mathf.PI / 2;
+        Vector3 diferencia = (mousePosition - transform.position);
+        Vector3 lookAt = (mousePosition - transform.position).normalized*speed;
+        float radians = Mathf.Atan2(diferencia.y, diferencia.x)- Mathf.PI / 2;
+        
         RotateZ(radians);
+        
+        Vector3 posicionFinal = new Vector3(lookAt.x, lookAt.y, 0);
+        Vector3 position = transform.position;
+        position += posicionFinal * Time.deltaTime;
+        transform.position = position;
     }
 
     private Vector4 GetWorldMousePosition()
@@ -24,4 +33,5 @@ public class LookAt : MonoBehaviour
     {
         transform.rotation = Quaternion.Euler(0.0f, 0.0f, radians * Mathf.Rad2Deg);
     }
+    
 }
