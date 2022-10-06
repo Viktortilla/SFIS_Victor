@@ -158,7 +158,7 @@ MonoBehaviour:
   camera: {fileID: 1874716883}
   angularSpeed: 180
   angularAcceleration: 1
-  radialSpeed: 2
+  radialSpeed: 0.1
   radialAcceleration: 1
 --- !u!4 &143743168
 Transform:
@@ -413,7 +413,7 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.6001587
+        time: 0.809433
         value: 0
         inSlope: 0
         outSlope: 0
