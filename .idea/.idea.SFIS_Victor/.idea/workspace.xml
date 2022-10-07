@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="745d5cbd-3549-465f-a1d6-376581769f1f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SFIS_Victor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SFIS_Victor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06Oscillation/Scenes/OscillationsDiagonal.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06Oscillation/Scenes/OscillationsDiagonal.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/03Forces/Scripts/MyBolitaWithForce.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/05CoordSystems/Scripts/MatrixDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/06Oscillation/Scripts/Oscillation diagonal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/06Oscillation/Scripts/OscillationDiagonal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/06Oscillation/Scripts/ruido.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -79,7 +80,8 @@
       <workItem from="1664930535136" duration="2589000" />
       <workItem from="1665018685875" duration="2432000" />
       <workItem from="1665066691943" duration="6661000" />
-      <workItem from="1665086999313" duration="7411000" />
+      <workItem from="1665086999313" duration="7751000" />
+      <workItem from="1665098932916" duration="3246000" />
     </task>
     <servers />
   </component>
